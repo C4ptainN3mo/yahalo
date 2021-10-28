@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.logo h2 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.logo-bg {
+  background-color: #16abf8;
+}
+
+/* Showcase */
+.showcase {
+  height: 100vh;
+}
+
+.popin p {
+  font-family: "Poppins", sans-serif;
+}
+.popin span {
+  font-family: "Poppins", sans-serif;
+}
+
+.activity-title {
+  box-sizing: border-box;
+}
+
+.activity-title h2 {
+  font-weight: 700;
+}
+
+.showcase .overlay {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.desc1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.activity-card{
+  box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
+}
+
+.card-footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: #888888;
+  font-size: 14px;
+  padding-top: 20px;
+  margin-bottom: -50px;
+  margin-left: -20px;
+  display: inline-flex;
+}
+
+.modal{
+  position: fixed;
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.modal-backdrop {
+  padding-top: 10px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.warning {
+  display: grid;
+  position: fixed;
+  z-index: 1060;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.warning-enter {
+  display: grid;
+  position: fixed;
+  z-index: 1060;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: scale(0.9);
+}
+.warning-enter-active {
+  display: grid;
+  position: fixed;
+  z-index: 1060;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.warning-exit {
+  display: grid;
+  position: fixed;
+  z-index: 1060;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  opacity: 1;
+}
+.warning-exit-active {
+  display: grid;
+  position: fixed;
+  z-index: 1060;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
